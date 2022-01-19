@@ -29,6 +29,7 @@
     "dependencies": {
         "express": "^4.17.2",
         "luxon": "^2.3.0",
-        "mongoose": "^6.1.7"
+        "mongoose": "^6.1.7",
+        "validator": "^13.7.0"
     }
 }
