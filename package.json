@@ -1,0 +1,34 @@
+{
+    "name": "social-network-api",
+    "version": "1.0.0",
+    "description": "An sample API for a social network in which users can make posts, react to and interact with posts, and create and manage friend lists.",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server.js",
+        "watch": "nodemon server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Thorulfr/social-network-api.git"
+    },
+    "keywords": [
+        "api",
+        "social",
+        "network",
+        "mongodb",
+        "mongoose",
+        "database"
+    ],
+    "author": "Benjamin Holt",
+    "license": "GPL-3.0-or-later",
+    "bugs": {
+        "url": "https://github.com/Thorulfr/social-network-api/issues"
+    },
+    "homepage": "https://github.com/Thorulfr/social-network-api#readme",
+    "dependencies": {
+        "express": "^4.17.2",
+        "luxon": "^2.3.0",
+        "mongoose": "^6.1.7"
+    }
+}
