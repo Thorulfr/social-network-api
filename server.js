@@ -13,7 +13,7 @@ app.use(require('./routes'));
 
 // Establish Mongoose connection
 mongoose.connect(
-    process.env.MONGODB_URI || 'mongodb://localhost:27017/pizza-hunt'
+    process.env.MONGODB_URI || 'mongodb://localhost:27017/social-network-api'
 );
 
 // Log Mongo

@@ -5,10 +5,6 @@ const userController = {
     // Get all users
     getAllUsers(req, res) {
         User.find({})
-            .populate({
-                path: 'users',
-                select: '-__v',
-            })
             .select('__v')
             .sort({ _id: -1 })
             .then((dbUserData) => res.json(dbUserData))
@@ -25,3 +21,5 @@ const userController = {
     // Add a friend to a user's friend list using both IDs
     // Delete a friend from a user's friend list using both IDs
 };
+
+module.exports = userController;
