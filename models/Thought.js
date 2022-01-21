@@ -48,6 +48,10 @@ const ThoughtSchema = new Schema(
             type: 'string',
             required: [true, 'Username is required!'],
         },
+        userId: {
+            type: 'string',
+            required: [true, 'User ID is required!'],
+        },
         reactions: [ReactionSchema],
     },
     {

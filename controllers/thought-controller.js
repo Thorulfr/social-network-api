@@ -96,9 +96,9 @@ const thoughtController = {
             });
     },
     // Add a reaction to a thought by ID
-    addReaction({ params }, res) {
+    addReaction({ params, body }, res) {
         Thought.findOneAndUpdate(
-            { _id: params.id },
+            { _id: params.thoughtId },
             { $push: { reactions: body } },
             { new: true }
         )
@@ -118,9 +118,9 @@ const thoughtController = {
             });
     },
     // Delete a reaction to a thought by ID
-    deleteReaction({ params }, res) {
+    deleteReaction({ params, body }, res) {
         Thought.findOneAndUpdate(
-            { _id: params.id },
+            { _id: params.thoughtId },
             { $pull: { reactions: body } },
             { new: true }
         )

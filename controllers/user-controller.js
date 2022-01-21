@@ -9,6 +9,10 @@ const userController = {
                 path: 'friends',
                 select: '-__v',
             })
+            .populate({
+                path: 'thoughts',
+                select: '-__v',
+            })
             .then((dbUserData) => res.json(dbUserData))
             .catch((err) => {
                 console.error(err);
@@ -20,6 +24,10 @@ const userController = {
         User.findOne({ _id: params.id })
             .populate({
                 path: 'friends',
+                select: '-__v',
+            })
+            .populate({
+                path: 'thoughts',
                 select: '-__v',
             })
             .select('-__v')
