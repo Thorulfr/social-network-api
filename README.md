@@ -28,11 +28,12 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
 
 ## Built With
 
-<!-- -   JavaScript
+-   JavaScript
 -   Node.js
--   Inquirer
--   console.table
--   dotenv -->
+-   MongoDB
+-   Mongoose
+-   Express
+-   Luxon
 
 ## Website
 
@@ -40,7 +41,7 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
 
 ## Video Demonstration
 
-[See this app in action.](https)
+[See this app in action.](https://youtu.be/MOfmfsOLSZk)
 
 ## Credits
 

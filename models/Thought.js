@@ -1,5 +1,6 @@
 // Imports
 const { Schema, model, Types } = require('mongoose');
+const { DateTime } = require('luxon');
 
 // Schema to regulate reactions
 const ReactionSchema = new Schema(
@@ -42,6 +43,8 @@ const ThoughtSchema = new Schema(
         createdAt: {
             type: Date,
             default: Date.now,
+            get: (createdAtVal) =>
+                createdAtVal.toLocaleString(DateTime.DATE_HUGE),
             // Date formatter will go here
         },
         username: {
