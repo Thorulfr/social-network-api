@@ -21,7 +21,8 @@ const ReactionSchema = new Schema(
         createdAt: {
             type: Date,
             default: Date.now,
-            // Date formatter will go here
+            get: (createdAtVal) =>
+                createdAtVal.toLocaleString(DateTime.DATE_HUGE),
         },
     },
     {
@@ -45,7 +46,6 @@ const ThoughtSchema = new Schema(
             default: Date.now,
             get: (createdAtVal) =>
                 createdAtVal.toLocaleString(DateTime.DATE_HUGE),
-            // Date formatter will go here
         },
         username: {
             type: 'string',
