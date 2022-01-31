@@ -1,6 +1,6 @@
 # Social Network API
 
-An sample API for a social network in which users can make posts, react to and interact with posts, and create and manage friend lists. This serves as an exercise in creating a back-end structure using Express.js, MongoDB, and Mongoose.
+A sample API for a social network in which users can make posts, react to and interact with posts, and create and manage friend lists. This serves as an exercise in creating a back-end structure using Express.js, MongoDB, and Mongoose.
 
 In creating this application, I used the following user story and acceptance criteria:
 
